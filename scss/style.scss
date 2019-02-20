@@ -3,7 +3,6 @@ $color-white: white;
 $button-brown: #e1aa6e;
 $border-color: #00b5d2;
 
-
 * {
   box-sizing: border-box;
 }
@@ -13,39 +12,41 @@ $border-color: #00b5d2;
   background-repeat: no-repeat;
   background-position-x: center;
   font-family: 'Lato', sans-serif;
-  .header-top-nav {
-    display: flex;
-    justify-content: space-between;
-    background: transparent;
-    .logo {
-      margin-top: 42px;
-      margin-left: 30px;
-    }
-    nav {
-      text-transform: uppercase;
-      margin-top: 50px;
-      margin-right: 50px;
-      .active {
-        color: white;
-        padding-bottom: 40px;
-        border-bottom: 5px solid $border-color;
+  .header-content {
+    .header-top-nav {
+      display: flex;
+      justify-content: space-between;
+      background: transparent;
+      .logo {
+        margin-top: 42px;
+        margin-left: 30px;
       }
-      ul {
-        float: right;
-        li {
-          display: inline-block;
-          float: left;
-          margin-left: 25px;
-          a {
+      nav {
+        text-transform: uppercase;
+        margin-top: 50px;
+        margin-right: 50px;
+        .active {
+          color: white;
+          padding-bottom: 40px;
+          border-bottom: 5px solid $border-color;
+        }
+        ul {
+          float: right;
+          li {
             display: inline-block;
-            outline: none;
-            color: $link-color;
-            font-size: 16px;
-            text-decoration: none;
-            letter-spacing: .04em;
-            &:hover {
-              color: $color-white;
+            float: left;
+            margin-left: 25px;
+            a {
+              display: inline-block;
+              outline: none;
+              color: $link-color;
+              font-size: 16px;
               text-decoration: none;
+              letter-spacing: .04em;
+              &:hover {
+                color: $color-white;
+                text-decoration: none;
+              }
             }
           }
         }
@@ -236,15 +237,16 @@ $border-color: #00b5d2;
   }
   padding-bottom: 128px;
 }
-#clients{
+
+#clients {
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
-  > div{
+  > div {
     padding: 0 10px;
-      img{
-        max-width: 100%;
-        height: auto;
+    img {
+      max-width: 100%;
+      height: auto;
     }
   }
 }

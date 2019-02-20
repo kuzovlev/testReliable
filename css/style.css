@@ -7,35 +7,35 @@
   background-position-x: center;
   font-family: 'Lato', sans-serif;
   padding-bottom: 128px; }
-  #header .header-top-nav {
+  #header .header-content .header-top-nav {
     display: flex;
     justify-content: space-between;
     background: transparent; }
-    #header .header-top-nav .logo {
+    #header .header-content .header-top-nav .logo {
       margin-top: 42px;
       margin-left: 30px; }
-    #header .header-top-nav nav {
+    #header .header-content .header-top-nav nav {
       text-transform: uppercase;
       margin-top: 50px;
       margin-right: 50px; }
-      #header .header-top-nav nav .active {
+      #header .header-content .header-top-nav nav .active {
         color: white;
         padding-bottom: 40px;
         border-bottom: 5px solid #00b5d2; }
-      #header .header-top-nav nav ul {
+      #header .header-content .header-top-nav nav ul {
         float: right; }
-        #header .header-top-nav nav ul li {
+        #header .header-content .header-top-nav nav ul li {
           display: inline-block;
           float: left;
           margin-left: 25px; }
-          #header .header-top-nav nav ul li a {
+          #header .header-content .header-top-nav nav ul li a {
             display: inline-block;
             outline: none;
             color: #454545;
             font-size: 16px;
             text-decoration: none;
             letter-spacing: .04em; }
-            #header .header-top-nav nav ul li a:hover {
+            #header .header-content .header-top-nav nav ul li a:hover {
               color: white;
               text-decoration: none; }
   @media screen and (max-width: 560px) {

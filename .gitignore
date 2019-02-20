@@ -76,5 +76,5 @@ typings/
 .fusebox/
 
 #IDE
-.idea
+.idea/
 .idea/workspace.xml

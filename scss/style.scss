@@ -13,6 +13,8 @@ $border-color: #00b5d2;
   background-position-x: center;
   font-family: 'Lato', sans-serif;
   .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
     .header-top-nav {
       display: flex;
       justify-content: space-between;

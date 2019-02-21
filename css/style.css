@@ -6,7 +6,10 @@
   background-repeat: no-repeat;
   background-position-x: center;
   font-family: 'Lato', sans-serif;
-  padding-bottom: 128px; }
+  padding-bottom: 11vw; }
+  @media screen and (max-width: 320px) {
+    #header {
+      background-position-y: -70px; } }
   #header .header-content {
     max-width: 1200px;
     margin: 0 auto; }
@@ -15,12 +18,15 @@
       justify-content: space-between;
       background: transparent; }
       #header .header-content .header-top-nav .logo {
-        margin-top: 42px;
-        margin-left: 30px; }
+        margin-top: 3.3vw;
+        margin-left: 2.5vw; }
+        @media screen and (max-width: 320px) {
+          #header .header-content .header-top-nav .logo img {
+            width: 90%; } }
       #header .header-content .header-top-nav nav {
         text-transform: uppercase;
-        margin-top: 50px;
-        margin-right: 50px; }
+        margin-top: 4vw;
+        margin-right: 4vw; }
         #header .header-content .header-top-nav nav .active {
           color: white;
           padding-bottom: 40px;
@@ -41,7 +47,7 @@
               #header .header-content .header-top-nav nav ul li a:hover {
                 color: white;
                 text-decoration: none; }
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 568px) {
     #header .nav-container {
       position: fixed;
       top: 60px;
@@ -99,7 +105,11 @@
       z-index: 9999;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
-      border-radius: 50%; }
+      border-radius: 50%; } }
+  @media screen and (max-width: 568px) and (max-width: 320px) {
+    #header .nav-open {
+      top: 0; } }
+  @media screen and (max-width: 568px) {
       #header .nav-open i {
         display: block;
         width: 20px;
@@ -158,6 +168,9 @@
         padding-bottom: 25px;
         letter-spacing: 1.5px;
         font-weight: 900; }
+        @media screen and (max-width: 320px) {
+          #header .top-block .preview-text h1 {
+            font-size: 5.5vw; } }
         #header .top-block .preview-text h1 span {
           border-bottom: #00b5d2 solid 5px;
           padding-bottom: 17px; }
@@ -169,13 +182,13 @@
         letter-spacing: 0.9px;
         padding-left: 4px; }
       #header .top-block .preview-text button {
-        width: 286px;
-        height: 71px;
+        width: 23.7vw;
+        height: 5.8vw;
         background: #e1aa6e;
         color: white;
         margin-top: 42px;
         margin-left: 4px;
-        font-size: 20px;
+        font-size: 1.7vw;
         text-transform: uppercase;
         border: none;
         border-bottom: 8px solid #ba8e5b; }
@@ -193,7 +206,11 @@
 
 #support {
   background-color: #00b5d2;
-  position: relative; }
+  position: relative;
+  height: 41.7vw; }
+  @media screen and (max-width: 320px) {
+    #support {
+      height: 55vw; } }
   #support .support-top {
     max-width: 1200px;
     margin: 0 auto;
@@ -212,25 +229,28 @@
       line-height: 1.8;
       letter-spacing: 0.9px;
       padding-left: 4px;
-      text-align: center; }
+      text-align: center;
+      margin-top: 4px; }
     #support .support-top .support-image {
       position: absolute;
       text-align: center;
       bottom: 0;
       left: -50%;
-      transform: translateX(100%); }
-      @media screen and (max-width: 560px) {
+      right: 50%;
+      transform: translateX(50%); }
+      @media screen and (max-width: 568px) {
         #support .support-top .support-image {
           display: none; } }
       #support .support-top .support-image img {
         margin-bottom: -0.6vw; }
         @media screen and (max-width: 768px) {
           #support .support-top .support-image img {
-            height: 10vw; } }
+            height: 16vw; } }
 
 #services {
   text-align: center;
-  padding-top: 5.8vw; }
+  padding-top: 5.8vw;
+  padding-bottom: 5.8vw; }
   #services h3 {
     font-size: 24px;
     font-weight: 700;
@@ -243,43 +263,65 @@
       max-width: 65vw;
       margin: 0 auto; }
   #services button {
-    width: 286px;
-    height: 71px;
+    width: 23.7vw;
+    height: 5.8vw;
     background: #e1aa6e;
     color: white;
     margin-top: 3vw;
     margin-left: 4px;
-    font-size: 20px;
+    font-size: 1.7vw;
     text-transform: uppercase;
     border: none;
     border-bottom: 8px solid #ba8e5b; }
 
-.slider {
-  margin: 0 auto;
-  max-width: 755px; }
-
-.slide_viewer {
-  height: 500px;
-  overflow: hidden;
-  position: relative; }
-
-.slide_group {
-  height: 100%;
-  position: relative;
-  width: 100%; }
-
-.slide {
-  display: none;
-  height: 100%;
-  position: absolute;
-  width: 100%; }
-  .slide:first-child {
-    display: block; }
-  .slide:nth-of-type(1) {
-    background: #D7A151; }
-  .slide:nth-of-type(2) {
-    background: #F4E4CD; }
-  .slide:nth-of-type(3) {
-    background: #C75534; }
-  .slide:nth-of-type(4) {
-    background: #D1D1D4; }
+#slider-section {
+  background: url("../images/slider-bg.jpg"); }
+  #slider-section .slider-wrapper {
+    padding-top: 9.7vw; }
+    #slider-section .slider-wrapper .slider {
+      margin: 0 auto;
+      max-width: 755px;
+      position: relative;
+      bottom: -30px;
+      border: 8px solid white; }
+    #slider-section .slider-wrapper .slide_viewer {
+      height: 40vw;
+      overflow: hidden;
+      position: relative; }
+      @media screen and (max-width: 768px) {
+        #slider-section .slider-wrapper .slide_viewer {
+          height: 64vw; } }
+    #slider-section .slider-wrapper .slide_group {
+      height: 100%;
+      position: relative;
+      width: 100%; }
+    #slider-section .slider-wrapper .slide {
+      display: none;
+      height: 100%;
+      position: absolute;
+      width: 100%; }
+      #slider-section .slider-wrapper .slide .left-overlay {
+        position: absolute;
+        height: 100%;
+        width: 34%;
+        background: #00b5d2;
+        opacity: .3;
+        top: 0; }
+      #slider-section .slider-wrapper .slide .center-overlay {
+        position: absolute;
+        height: 100%;
+        width: 33%;
+        background: #1b97c5;
+        opacity: .3;
+        top: 0;
+        left: 34%; }
+      #slider-section .slider-wrapper .slide .right-overlay {
+        position: absolute;
+        height: 100%;
+        width: 33%;
+        background: #0067ac;
+        opacity: .3;
+        top: 0;
+        left: 67%; }
+      #slider-section .slider-wrapper .slide img {
+        width: 100%; }

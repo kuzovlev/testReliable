@@ -421,7 +421,7 @@ $border-color: #00b5d2;
   margin-top: 7.5vw;
   background: #367ab7;
   color: white;
-  margin-bottom: 60px;
+  margin-bottom: 4.9vw;
   img {
     height: 100%;
   }
@@ -477,6 +477,65 @@ $border-color: #00b5d2;
       text-transform: uppercase;
       border: none;
       border-bottom: 8px solid #008ea5;
+    }
+  }
+}
+
+#footer {
+  border-top: 3px solid #ccc;
+  padding-bottom: 5vw;
+  .footer-nav {
+    margin-top: 3.9vw;
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        padding: 0 2.5vw;
+        text-transform: uppercase;
+        a {
+          color: #ccc;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .footer-devider {
+    display: flex;
+    justify-content: center;
+    height: 13px;
+    margin-top: 3.7vw;
+    img {
+      padding: 0 20px;
+    }
+  }
+  .footer-contacts {
+    font-family: Lato, sans-serif;
+    color: #ccc;
+    text-align: center;
+    margin-top: 4vw;
+    font-size: 1.3vw;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4.2vw;
+    p:first-of-type {
+      padding-top: 0;
+    }
+    p {
+      padding-top: 1.5vw;
+      a {
+        color: #e1aa6e;
+        letter-spacing: 1.3px;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer-copyright {
+    color: #eee;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    p{
+      padding-top: 2.7vw;
+      letter-spacing: 0.5px;
     }
   }
 }

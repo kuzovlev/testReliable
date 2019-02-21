@@ -336,7 +336,7 @@
   margin-top: 7.5vw;
   background: #367ab7;
   color: white;
-  margin-bottom: 60px; }
+  margin-bottom: 4.9vw; }
   #join-us img {
     height: 100%; }
   @media screen and (max-width: 768px) {
@@ -381,3 +381,49 @@
       text-transform: uppercase;
       border: none;
       border-bottom: 8px solid #008ea5; }
+
+#footer {
+  border-top: 3px solid #ccc;
+  padding-bottom: 5vw; }
+  #footer .footer-nav {
+    margin-top: 3.9vw; }
+    #footer .footer-nav ul {
+      display: flex;
+      justify-content: center; }
+      #footer .footer-nav ul li {
+        padding: 0 2.5vw;
+        text-transform: uppercase; }
+        #footer .footer-nav ul li a {
+          color: #ccc;
+          text-decoration: none; }
+  #footer .footer-devider {
+    display: flex;
+    justify-content: center;
+    height: 13px;
+    margin-top: 3.7vw; }
+    #footer .footer-devider img {
+      padding: 0 20px; }
+  #footer .footer-contacts {
+    font-family: Lato, sans-serif;
+    color: #ccc;
+    text-align: center;
+    margin-top: 4vw;
+    font-size: 1.3vw;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4.2vw; }
+    #footer .footer-contacts p:first-of-type {
+      padding-top: 0; }
+    #footer .footer-contacts p {
+      padding-top: 1.5vw; }
+      #footer .footer-contacts p a {
+        color: #e1aa6e;
+        letter-spacing: 1.3px;
+        text-decoration: none; }
+  #footer .footer-copyright {
+    color: #eee;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    text-align: center; }
+    #footer .footer-copyright p {
+      padding-top: 2.7vw;
+      letter-spacing: 0.5px; }

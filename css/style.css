@@ -148,13 +148,13 @@
   #header .hidden {
     display: none; }
   #header .top-block {
-    margin-top: 132px;
+    margin-top: 11vw;
     margin-left: 26px; }
     #header .top-block .preview-text {
-      width: 466px; }
+      width: 38.9vw; }
       #header .top-block .preview-text h1 {
         color: white;
-        font-size: 48px;
+        font-size: 4vw;
         padding-bottom: 25px;
         letter-spacing: 1.5px;
         font-weight: 900; }
@@ -183,9 +183,61 @@
 #clients {
   display: flex;
   justify-content: space-around;
-  padding-top: 30px; }
+  padding-top: 30px;
+  margin-bottom: 18px; }
   #clients > div {
     padding: 0 10px; }
     #clients > div img {
       max-width: 100%;
       height: auto; }
+
+#support {
+  background-color: #00b5d2; }
+  #support .support-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    padding-top: 8.2vw; }
+    #support .support-top h1 {
+      text-align: center;
+      color: white;
+      font-size: 4vw;
+      padding-bottom: 25px;
+      letter-spacing: 1.5px;
+      font-weight: 900; }
+    #support .support-top p {
+      font-family: 'Lato', sans-serif;
+      color: white;
+      line-height: 1.8;
+      letter-spacing: 0.9px;
+      padding-left: 4px;
+      text-align: center; }
+    #support .support-top .support-image {
+      margin-top: 77px;
+      text-align: center; }
+
+#services {
+  text-align: center;
+  padding-top: 5.8vw; }
+  #services h3 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px; }
+  #services div {
+    margin-top: 3vw;
+    font-size: 1.6vw;
+    line-height: 1.4; }
+    #services div p {
+      max-width: 755px;
+      margin: 0 auto; }
+  #services button {
+    width: 286px;
+    height: 71px;
+    background: #e1aa6e;
+    color: white;
+    margin-top: 3vw;
+    margin-left: 4px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 8px solid #ba8e5b; }

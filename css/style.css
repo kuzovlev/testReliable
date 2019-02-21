@@ -6,7 +6,8 @@
   background-repeat: no-repeat;
   background-position-x: center;
   font-family: 'Lato', sans-serif;
-  padding-bottom: 11vw; }
+  padding-bottom: 8.8vw;
+  background-color: #c36935; }
   @media screen and (max-width: 480px) {
     #header {
       background-position-y: -90px; } }
@@ -266,6 +267,9 @@
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1.2px; }
+    @media screen and (max-width: 480px) {
+      #services h3 {
+        font-size: 5vw; } }
   #services div {
     margin-top: 3vw;
     font-size: 1.6vw;
@@ -273,6 +277,9 @@
     #services div p {
       max-width: 65vw;
       margin: 0 auto; }
+      @media screen and (max-width: 768px) {
+        #services div p {
+          font-size: 2vw; } }
       @media screen and (max-width: 480px) {
         #services div p {
           font-size: 2.5vw; } }
@@ -405,7 +412,7 @@
       border-bottom: 8px solid #008ea5; }
       @media screen and (max-width: 480px) {
         #join-us .join-right button {
-          font-size: 1.5vw; } }
+          font-size: 1.4vw; } }
 
 #footer {
   border-top: 3px solid #ccc;

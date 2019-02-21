@@ -40,6 +40,9 @@ $border-color: #00b5d2;
           color: white;
           padding-bottom: 40px;
           border-bottom: 5px solid $border-color;
+          @media screen and (max-width: 568px){
+            padding-bottom: 0;
+          }
         }
         ul {
           float: right;
@@ -67,7 +70,7 @@ $border-color: #00b5d2;
   @media screen and (max-width: 568px) {
     .nav-container {
       position: fixed;
-      top: 60px;
+      top: 0;
       left: 0;
       height: 100%;
       width: 100%;
@@ -82,14 +85,12 @@ $border-color: #00b5d2;
       ul {
         position: absolute;
         top: 10%;
-        transform: translateY(-50%);
         width: 100%;
-        padding-right: 2vw;
         li {
           display: block;
           float: none;
           width: 100%;
-          text-align: right;
+          text-align: center;
           margin-bottom: 10px;
           &:nth-child(1) {
             a {
@@ -454,7 +455,10 @@ $border-color: #00b5d2;
       letter-spacing: 1.5px;
       font-weight: 900;
       @media screen and (max-width: 320px) {
-        font-size: 5.5vw;
+        font-size: 9vw;
+      }
+      @media screen and (max-width: 568px){
+        font-size: 6vw;
       }
       span {
         border-bottom: $border-color solid 5px;
@@ -472,11 +476,14 @@ $border-color: #00b5d2;
       height: 5.8vw;
       background: #00b5d2;
       color: white;
-      margin-top: 38px;
+      margin-top: 3.1vw;
       font-size: 1.7vw;
       text-transform: uppercase;
       border: none;
       border-bottom: 8px solid #008ea5;
+      @media screen and(max-width: 480px){
+        font-size: 1.5vw;
+      }
     }
   }
 }
@@ -489,9 +496,16 @@ $border-color: #00b5d2;
     ul {
       display: flex;
       justify-content: center;
+      @media screen and (max-width: 320px){
+        display: block;
+        text-align: center;
+      }
       li {
         padding: 0 2.5vw;
         text-transform: uppercase;
+        @media screen and (max-width: 320px){
+          padding: 2vw 0;
+        }
         a {
           color: #ccc;
           text-decoration: none;
@@ -516,6 +530,12 @@ $border-color: #00b5d2;
     font-size: 1.3vw;
     border-bottom: 1px solid #eee;
     padding-bottom: 4.2vw;
+    @media screen and (max-width: 568px){
+      font-size: 2vw;
+    }
+    @media screen and (max-width: 480px){
+      font-size: 3vw;
+    }
     p:first-of-type {
       padding-top: 0;
     }

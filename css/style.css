@@ -31,6 +31,9 @@
           color: white;
           padding-bottom: 40px;
           border-bottom: 5px solid #00b5d2; }
+          @media screen and (max-width: 568px) {
+            #header .header-content .header-top-nav nav .active {
+              padding-bottom: 0; } }
         #header .header-content .header-top-nav nav ul {
           float: right; }
           #header .header-content .header-top-nav nav ul li {
@@ -50,7 +53,7 @@
   @media screen and (max-width: 568px) {
     #header .nav-container {
       position: fixed;
-      top: 60px;
+      top: 0;
       left: 0;
       height: 100%;
       width: 100%;
@@ -65,14 +68,12 @@
       #header .nav-container ul {
         position: absolute;
         top: 10%;
-        transform: translateY(-50%);
-        width: 100%;
-        padding-right: 2vw; }
+        width: 100%; }
         #header .nav-container ul li {
           display: block;
           float: none;
           width: 100%;
-          text-align: right;
+          text-align: center;
           margin-bottom: 10px; }
           #header .nav-container ul li:nth-child(1) a {
             transition-delay: 0.2s; }
@@ -362,7 +363,10 @@
       font-weight: 900; }
       @media screen and (max-width: 320px) {
         #join-us .join-right h1 {
-          font-size: 5.5vw; } }
+          font-size: 9vw; } }
+      @media screen and (max-width: 568px) {
+        #join-us .join-right h1 {
+          font-size: 6vw; } }
       #join-us .join-right h1 span {
         border-bottom: #00b5d2 solid 5px;
         padding-bottom: 8px; }
@@ -376,11 +380,14 @@
       height: 5.8vw;
       background: #00b5d2;
       color: white;
-      margin-top: 38px;
+      margin-top: 3.1vw;
       font-size: 1.7vw;
       text-transform: uppercase;
       border: none;
       border-bottom: 8px solid #008ea5; }
+      @media screen and (max-width: 480px) {
+        #join-us .join-right button {
+          font-size: 1.5vw; } }
 
 #footer {
   border-top: 3px solid #ccc;
@@ -390,9 +397,16 @@
     #footer .footer-nav ul {
       display: flex;
       justify-content: center; }
+      @media screen and (max-width: 320px) {
+        #footer .footer-nav ul {
+          display: block;
+          text-align: center; } }
       #footer .footer-nav ul li {
         padding: 0 2.5vw;
         text-transform: uppercase; }
+        @media screen and (max-width: 320px) {
+          #footer .footer-nav ul li {
+            padding: 2vw 0; } }
         #footer .footer-nav ul li a {
           color: #ccc;
           text-decoration: none; }
@@ -411,6 +425,12 @@
     font-size: 1.3vw;
     border-bottom: 1px solid #eee;
     padding-bottom: 4.2vw; }
+    @media screen and (max-width: 568px) {
+      #footer .footer-contacts {
+        font-size: 2vw; } }
+    @media screen and (max-width: 480px) {
+      #footer .footer-contacts {
+        font-size: 3vw; } }
     #footer .footer-contacts p:first-of-type {
       padding-top: 0; }
     #footer .footer-contacts p {

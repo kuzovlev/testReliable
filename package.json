@@ -29,6 +29,5 @@
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "^5.0.1",
     "rename": "^1.0.4",
-    "uglify": "^0.1.5"
   }
 }
